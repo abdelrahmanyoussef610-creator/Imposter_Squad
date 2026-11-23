@@ -912,7 +912,7 @@ function splash(){
 
 /* ===== تسجيل الدخول: جوجل / ضيف ===== */
 /* حط هنا الـ Client ID بتاعك من Google Cloud (OAuth 2.0 Web client). لو فاضي أو لسه PUT_YOUR، زرار جوجل بيتقفل واللعبة بتشتغل كضيف. */
-const GOOGLE_CLIENT_ID='PUT_YOUR_CLIENT_ID.apps.googleusercontent.com';
+const GOOGLE_CLIENT_ID='631152935877-fkmt5j1ms0qh1lmcppsae03oukurdvgf.apps.googleusercontent.com';                
 const gOn=()=>!/PUT_YOUR/.test(GOOGLE_CLIENT_ID)&&GOOGLE_CLIENT_ID.length>20;
 function authUser(){try{return JSON.parse(localStorage.getItem('user')||'null')}catch(e){return null}}
 function authDone(){try{return !!authUser()||localStorage.getItem('guest')==='1'}catch(e){return true}}
